@@ -1,5 +1,11 @@
 package ztu.cards;
 
+import com.sun.net.httpserver.HttpServer;
+
+import java.io.IOException;
+import java.net.InetAddress;
+import java.net.InetSocketAddress;
+
 /**
  * This is a template for modelling a deck of cards.
  *
@@ -22,8 +28,9 @@ public class Deck
 
 
 
-    public static void main( String[] args )
-    {
+
+    public static void main( String[] args ) throws IOException {
+
         Deck deck = new Deck();
         long start = System.currentTimeMillis();
         int shuffles = 1000000;
